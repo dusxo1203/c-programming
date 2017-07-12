@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main() 
+
+{
+	int bag = 48;			// ÃÑ ¹«°Ô
+
+	int min = 3;			// ºÀ´Ù¸® 1
+	int big = 5;			// ºÀ´Ù¸® 2
+	
+	int num = 0;
+	int remain = 0;
+	int last = 0;
+	int total = 0;
+
+	num = bag / big;		// ÃÑ ¹«°Ô / ºÀ´Ù¸® 2
+
+	remain = bag % big;		// ÃÑ ¹«°Ô % ºÀ´Ù¸® 2
+
+	last = remain / min;		// ³²Àº ¹«°Ô / ºÀ´Ù¸® 1
+	
+	total = num + last;
+
+	printf("%dkg ºÀ´Ù¸® %d °³¿Í %dkg ºÀ´Ù¸® %d °³°¡ ÇÊ¿ä ÇÕ´Ï´Ù.\n", big, num, min, last);
+	printf("ÃÑ %d °³ÀÇ ºÀ´Ù¸®°¡ ÇÊ¿äÇÕ´Ï´Ù.\n", total);
+
+	// 5kg ºÀ´Ù¸® n °³¿Í 3kg ºÀ´Ù¸® n °³°¡ ÇÊ¿äÇÕ´Ï´Ù.
+}
